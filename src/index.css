@@ -1,0 +1,135 @@
+:root {
+  --primary: #0090C1;
+  --secondary: #38AECC;
+  --dark: #022F40;
+  --accent: #046E8F;
+  --background: #F5F5F5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--dark);
+}
+
+.ant-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.ant-btn-primary:hover {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 2px rgba(0, 144, 193, 0.1) !important;
+}
+
+.ant-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(2, 47, 64, 0.08);
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(2, 47, 64, 0.12);
+}
+
+/* Responsive styles for the layout */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none !important;
+  }
+  
+  .mobile-menu-button {
+    display: block !important;
+  }
+
+  .ant-layout-content {
+    padding: 16px !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-button {
+    display: none !important;
+  }
+  
+  .desktop-menu {
+    display: block !important;
+  }
+}
+
+/* Smooth transitions */
+.ant-layout-header {
+  transition: all 0.3s ease;
+}
+
+.ant-menu-item {
+  transition: all 0.3s ease !important;
+}
+
+/* Enhanced menu styling */
+.ant-menu-horizontal {
+  line-height: 64px;
+}
+
+.ant-menu-item:hover {
+  color: #0090C1 !important;
+}
+
+.ant-menu-item-selected {
+  color: #0090C1 !important;
+}
+
+/* Logo hover effect */
+.logo {
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Profile dropdown styling */
+.ant-dropdown-menu {
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(2, 47, 64, 0.12);
+}
+
+.ant-dropdown-menu-item {
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: rgba(0, 144, 193, 0.1);
+}
+
+.ant-avatar {
+  transition: all 0.3s ease;
+}
+
+.ant-avatar:hover {
+  opacity: 0.9;
+}
+
+/* Adjust mobile menu styles */
+@media (max-width: 768px) {
+  .ant-drawer-content-wrapper {
+    box-shadow: -4px 0 12px rgba(2, 47, 64, 0.12);
+  }
+}
+
+.clickable-rows .ant-table-tbody > tr {
+  cursor: pointer;
+}
+
+.clickable-rows .ant-table-tbody > tr:hover {
+  background-color: rgba(0, 144, 193, 0.1);
+}

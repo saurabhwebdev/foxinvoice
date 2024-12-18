@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red Triangle with gradient -->
+  <path 
+    d="M256 56L456 406H56L256 56Z"
+    fill="url(#gradient)"
+    filter="drop-shadow(0px 4px 8px rgba(239, 35, 60, 0.2))"
+  />
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3850"/>
+      <stop offset="100%" stop-color="#EF233C"/>
+    </linearGradient>
+  </defs>
+</svg> 

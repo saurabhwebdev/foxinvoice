@@ -1,0 +1,172 @@
+/* Main Styles */
+.invoice-detail-card {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0;
+  background: white;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.action-buttons {
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.invoice-container {
+  padding: 40px;
+}
+
+/* Header Styles */
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+}
+
+.brand-section {
+  max-width: 300px;
+}
+
+.business-logo {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.document-title {
+  text-align: right;
+}
+
+.document-title h1 {
+  color: #1890ff;
+  margin: 0;
+  font-size: 40px;
+}
+
+.invoice-number {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Info Section Styles */
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.business-details,
+.client-details,
+.invoice-summary {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.summary-item {
+  margin-bottom: 12px;
+}
+
+.summary-item:last-child {
+  margin-bottom: 0;
+}
+
+.status-tag {
+  margin-top: 4px;
+  font-size: 14px;
+  padding: 4px 12px;
+}
+
+/* Table Styles */
+.invoice-items-table {
+  margin-bottom: 48px;
+}
+
+.invoice-items-table .ant-table-thead > tr > th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.ant-table-summary {
+  background: white !important;
+}
+
+.total-row {
+  background: #f8f9fa;
+  font-size: 16px;
+}
+
+.total-row td {
+  padding: 16px 16px !important;
+}
+
+/* Footer Sections */
+.invoice-footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.notes-section,
+.payment-details {
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.payment-details {
+  background: #f0f5ff;
+  border: 1px dashed #1890ff;
+}
+
+.invoice-footer {
+  text-align: center;
+  padding: 24px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Print Styles */
+@media print {
+  .invoice-detail-card {
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .action-buttons {
+    display: none !important;
+  }
+
+  .invoice-container {
+    padding: 20px;
+  }
+
+  .business-details,
+  .client-details,
+  .invoice-summary,
+  .notes-section,
+  .payment-details,
+  .invoice-footer {
+    background: white !important;
+    border: 1px solid #eee !important;
+  }
+
+  .total-row {
+    background: #f8f9fa !important;
+  }
+
+  @page {
+    margin: 1cm;
+    size: A4;
+  }
+}
+  
